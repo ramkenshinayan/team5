@@ -12,6 +12,7 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 
 	for {
+		fmt.Print("Test")
 		fmt.Print("Enter an expression (e.g., 5 + 3) or 'exit' to quit: ")
 		input, _ := reader.ReadString('\n')
 		input = strings.TrimSpace(input)
